@@ -1,0 +1,38 @@
+   body {
+       height: 100%;
+       width: 100%;
+       display: flex;
+   }
+   
+   .log {
+       border-radius: 10px;
+       width: 400px;
+       margin: auto;
+       border: 1px solid #cccc;
+   }
+   
+   .title-line {
+       text-align: center;
+   }
+   
+   .input-box {
+       text-align: center;
+   }
+   
+   .remember {
+       line-height: 30px;
+       font-size: 10px;
+   }
+   
+   .remember .remember-tool {
+       height: 30px;
+   }
+   
+   .remember .remember-tool label {
+       height: 30px;
+       margin-bottom: 0px;
+   }
+   
+   .btn-box .btn {
+       background-color: #ccc;
+   }

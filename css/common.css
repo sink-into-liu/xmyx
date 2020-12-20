@@ -1,0 +1,110 @@
+@charset "UTF-8";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+b,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+strong,
+span,
+a,
+i,
+em,
+img,
+div,
+table,
+tr,
+td,
+th,
+form,
+input,
+button,
+select,
+option,
+textarea,
+iframe,
+figure,
+fieldset,
+legend,
+section,
+article,
+thead,
+tbody,
+tfoot,
+th,
+del,
+pre,
+caption,
+colgroup,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    border: 0;
+}
+
+.clear_fix::before {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}

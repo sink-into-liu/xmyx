@@ -1,0 +1,405 @@
+/* 小编精选 */
+
+.home {
+    position: relative;
+}
+
+.home .title-bar {
+    margin: 10px auto 20px;
+    font-size: 18px;
+    width: 1200px;
+    line-height: 56px;
+    color: #43240c;
+    background-color: #fff
+}
+
+.home .title-bar h3 {
+    display: inline-block;
+    margin-left: 52px;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.home .title-bar .title-bar-prompt {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #877a73
+}
+
+
+/* 查看更多 */
+
+.home .choice {
+    margin: 0 auto;
+    padding: 0 16px;
+    padding-bottom: 80px;
+}
+
+.home .choice-more {
+    margin: 126px auto 0;
+}
+
+.home .choice-more .choice-more-btn {
+    /* height: 70px; */
+    cursor: pointer;
+    margin: 0 auto;
+    width: 250px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 70px;
+    text-align: center;
+    color: #43240c;
+    background-color: #fee44e;
+    border-radius: 35px
+}
+
+
+/*  */
+
+.home .indexBanner {
+    width: 1200px;
+    height: 369px;
+    margin: auto;
+    /* position: relative; */
+    /* position: absolute;
+    transform: translateX(50%); */
+}
+
+
+/* .indexBanner:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both
+} */
+
+.indexBanner .sidebar {
+    float: left;
+    position: relative;
+    width: 220px;
+    background-color: #fcf9e3
+}
+
+.indexBanner .banner-container {
+    z-index: 2;
+    float: left;
+    margin-left: 10px;
+    width: calc(100% - 230px);
+    height: 100%;
+    /* background-color: red; */
+}
+
+.indexBanner .banner-container:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.indexBanner .slider {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 660px;
+    height: 234px
+}
+
+.indexBanner .slider .slider {
+    height: 234px
+}
+
+.indexBanner .slider-item {
+    cursor: pointer;
+    width: 100%;
+    height: 100%
+}
+
+.indexBanner .slider-item img {
+    width: 100%;
+    height: 100%
+}
+
+.indexBanner .banner-container-top:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.indexBanner .banner-container-top-right {
+    cursor: pointer;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    padding: 32px 13px;
+    width: 298px;
+    height: 234px;
+    color: #ff5817;
+    background-color: #fff4e4;
+    transition: all .3s
+}
+
+.indexBanner .banner-container-top-right:hover {
+    box-shadow: 2px 2px 12px 0 #d8d8d8
+}
+
+.indexBanner .banner-container-top-right h3 {
+    z-index: 3;
+    position: absolute;
+    top: 32px;
+    left: 13px;
+    font-size: 24px
+}
+
+.indexBanner .banner-container-top-right .prompt {
+    z-index: 3;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    padding: 0 47px 0 22px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+    background: url(../img/banner-contains-right.png) no-repeat 50%/cover
+}
+
+.indexBanner .banner-container-top-right img {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    height: 134px
+}
+
+.indexBanner .banner-container-bottom {
+    margin: 8px auto 0;
+    width: 100%;
+    height: 128px;
+    font-size: 18px
+}
+
+.indexBanner .banner-container-bottom:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.indexBanner .banner-container-bottom-QRCode,
+.indexBanner .banner-container-bottom-special {
+    cursor: pointer;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 10px;
+    height: 100%;
+    font-size: 18px;
+    transition: all .3s
+}
+
+.indexBanner .banner-container-bottom-QRCode:hover,
+.indexBanner .banner-container-bottom-special:hover {
+    box-shadow: 2px 2px 12px 0 #d8d8d8
+}
+
+.indexBanner .banner-container-bottom-special {
+    overflow: hidden;
+    position: relative;
+    padding: 26px 34px 16px;
+    width: 325px;
+    color: #fff;
+    background: linear-gradient(270deg, #ffd1dd, #fca6c0);
+    border-radius: 18px
+}
+
+.indexBanner .banner-container-bottom-special h3 {
+    font-size: 22px;
+    font-weight: 600
+}
+
+.indexBanner .banner-container-bottom-special p {
+    font-size: 18px
+}
+
+.indexBanner .banner-container-bottom-special .btn {
+    display: block;
+    margin-top: 11px;
+    width: 47px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #fec17e;
+    background-color: #fff;
+    border-radius: 10px
+}
+
+.indexBanner .banner-container-bottom-special img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 125px;
+    height: 125px
+}
+
+.indexBanner .banner-container-bottom-special:first-of-type .btn {
+    color: #fca6c0
+}
+
+.indexBanner .banner-container-bottom-special:nth-of-type(2) {
+    background: linear-gradient(270deg, #fffffe, #fec07e)
+}
+
+.indexBanner .banner-container-bottom-QRCode {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 35px 0 0 34px;
+    width: 297px;
+    background: linear-gradient(270deg, #e7f5ff, #afdcff);
+    border-radius: 8px
+}
+
+.indexBanner .banner-container-bottom-QRCode p {
+    font-size: 18px;
+    color: #fff
+}
+
+.indexBanner .banner-container-bottom-QRCode img {
+    box-sizing: border-box;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 18px;
+    border: 8px solid #afdcff
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 6px;
+    height: 30px;
+    width: 20px;
+    background-color: rgba(5, 5, 5, .3);
+    background-size: 15px 20px
+}
+
+.classification {
+    z-index: 10;
+    position: relative
+}
+
+.classification li {
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    transition: all .3s
+}
+
+.classification li.active {
+    background-color: #fff
+}
+
+.classification .sidebar-panel {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: -230px;
+    padding: 21px 22px;
+    width: 230px;
+    height: 100%;
+    background-color: #fff
+}
+
+.classification .sidebar-panel-loading {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    animation: loading-data-v-1994baad 1s linear infinite
+}
+
+.classification .sidebar-panel-item {
+    margin: 0 auto 30px;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    color: #a79c95
+}
+
+.classification .sidebar-panel-item h3 {
+    padding: 0 0 6px;
+    line-height: 17px;
+    border-bottom: 1px solid #e7e7ee
+}
+
+.classification .sidebar-panel-item ul {
+    overflow: hidden
+}
+
+.classification .sidebar-panel-item li {
+    float: left;
+    margin: 13px 4px 0;
+    width: auto;
+    line-height: 17px;
+    height: 17px
+}
+
+.classification .sidebar-panel-item li:hover {
+    color: #ff5656
+}
+
+
+/* .fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0
+}
+
+@keyframes loading-data-v-1994baad {
+    to {
+        transform: rotate(1turn)
+    }
+} */
+
+.classificationItem {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    min-width: 77px;
+    height: 100%;
+    color: #43200c
+}
+
+.classificationItem img {
+    position: absolute;
+    top: 50%;
+    left: -23px;
+    height: 20px;
+    transform: translateY(-50%)
+}
+
+.classificationItem P {
+    display: inline-block
+}
+
+.classificationItem P:hover {
+    color: #ff5656;
+    text-decoration: underline
+}

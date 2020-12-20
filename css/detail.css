@@ -1,0 +1,61 @@
+.containers {
+    border: 1px solid #ccc;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.media {
+    width: 1200px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#swiper-container {
+    height: 250px;
+    width: 250px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.goods_detail {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.media-body .media-heading {
+    height: 50px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.price .glyphicon {
+    color: red;
+    font-size: 16px;
+}
+
+.price span {
+    color: red;
+    font-size: 30px;
+}
+
+.btn-group {
+    margin: 20px 0;
+}
+
+.btn-group button {
+    background-color: #ccc;
+}
+
+.shop {
+    margin-top: 20px;
+}
+
+.goods_detail img {
+    width: 1000px;
+    display: block;
+}

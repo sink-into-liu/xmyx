@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* .swiper-button-prev {
+            height: 30px;
+        } */
+        
+        #swiper-button-left,
+        #swiper-button-right {
+            height: 50px;
+            /* background: rgba(0, 0, 0, ); */
+        }
+        
+        .row_contain {
+            width: 1200px;
+            /* position: absolute; */
+            /* left: 50%; */
+            /* transform: translateX(-50%); */
+            margin: 0 auto;
+        }
+        
+        .row .thumbnail img {
+            height: 267.5px;
+        }
+        
+        .row .thumbnail .goods_description {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            cursor: pointer;
+            height: 40px;
+        }
+        
+        .row .thumbnail .goods_description:hover {
+            color: red;
+        }
+        
+        .row .thumbnail .price_per {
+            height: 30px;
+            color: red;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+        
+        .box {
+            margin-bottom: 30px;
+        }
+        
+        .box p,
+        .box div {
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="../swiper-master/package/swiper-bundle.min.css">
+    <script src="../swiper-master/package/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- <script src="../bootstrap/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/headANDfoot.css">
+    <link rel="stylesheet" href="../css/bannerpart.css">
+    <script src="../js/utils.js"></script>
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="appPC" style="position: static;">
+        <!-- 头部 -->
+        <header class="baseHeader">
+            <div class="wrapper">
+                <section class="logo">
+                    <a href="#/" title="返回首页"><img src="../img/logo.png" alt="logo">
+                        <div class="right">
+                            <h3>熊猫优选</h3> <span>XIONG MAO YOU XUAN</span>
+                        </div>
+                    </a>
+                </section>
+                <section class="wrapper-search">
+                    <div class="search"><input placeholder="搜索商品，发现更多优惠">
+                        <div class="btn">搜索</div>
+                        <!-- <ul data-v-4e2355ca="" class="hot-list" style="display: none;">
+                            <li data-v-4e2355ca="" class="highlight">
+                                补水面膜
+                            </li>
+                            <li data-v-4e2355ca="" class="">
+                                棉被
+                            </li>
+                            <li data-v-4e2355ca="" class="highlight">
+                                ins风卫衣女
+                            </li>
+                            <li data-v-4e2355ca="" class="">
+                                口红
+                            </li>
+                            <li data-v-4e2355ca="" class="highlight">
+                                香水
+                            </li>
+                            <li data-v-4e2355ca="" class="">
+                                洗发水
+                            </li>
+                            <li data-v-4e2355ca="" class="">
+                                风扇
+                            </li>
+                            <li data-v-4e2355ca="" class="highlight">
+                                螺蛳粉
+                            </li>
+                        </ul> -->
+                    </div>
+                </section>
+                <section class="advantage">
+                    <ul>
+                        <li><img src="../img/包邮.png" alt="全程包邮"> <span>全程包邮</span></li>
+                        <li><img src="../img/退换.png" alt="7天退换"> <span>7天退换</span></li>
+                        <li><img src="../img/品质保证.png" alt="品质保证"> <span>品质保证</span></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+        <!-- 导航栏 -->
+        <div class="tab">
+            <div class="normal">
+                <ul>
+                    <li class="active" index="1">
+                        首页
+                    </li>
+                    <li class="" index="2">
+                        9块9包邮
+                    </li>
+                    <li class="" index="3">
+                        超值大额券
+                    </li>
+                    <li class="" index="4">
+                        冬季女装上新
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- banner部分 -->
+        <div class="pc-view">
+            <!-- <div class="home">
+                <div class="indexBanner clear_fix">
+                    <section class="sidebar">
+                        <div class="classification">
+                            <ul>
+                                <li class="">
+                                    <div class="classificationItem">
+                                        <img src="../img/1.png" alt="icon">
+                                        <p>女装</p>
+                                        <p>
+                                            <span> /</span>女鞋
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="classificationItem"><img src="../img/2.png" alt="icon">
+                                        <p>
+                                            男装
+                                        </p>
+                                        <p>
+                                            <span> /</span> 男鞋
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div data-v-4eceb4d8="" data-v-1994baad="" class="classificationItem"><img data-v-4eceb4d8="" src="../img/3.png" alt="icon">
+                                        <p data-v-4eceb4d8="">
+                                            美妆
+                                        </p>
+                                        <p data-v-4eceb4d8="">
+                                            <span data-v-4eceb4d8=""> /</span>个护</p>
+                                    </div>
+
+                                </li>
+                                <li class="">
+                                    <div data-v-4eceb4d8="" data-v-1994baad="" class="classificationItem"><img data-v-4eceb4d8="" src="../img/4.png" alt="icon">
+                                        <p data-v-4eceb4d8="">
+                                            配饰
+                                        </p>
+                                        <p data-v-4eceb4d8="">
+                                            <span data-v-4eceb4d8=""> /</span>箱包</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div data-v-4eceb4d8="" data-v-1994baad="" class="classificationItem"><img data-v-4eceb4d8="" src="../img/5.png" alt="icon">
+                                        <p data-v-4eceb4d8="">
+                                            零食王国
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div data-v-4eceb4d8="" data-v-1994baad="" class="classificationItem"><img data-v-4eceb4d8="" src="../img/6.png" alt="icon">
+                                        <p data-v-4eceb4d8="">
+                                            母婴用品</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div data-v-4eceb4d8="" data-v-1994baad="" class="classificationItem"><img data-v-4eceb4d8="" src="../img/7.png" alt="icon">
+                                        <p data-v-4eceb4d8="">
+                                            手机</p>
+                                        <p data-v-4eceb4d8=""><span data-v-4eceb4d8=""> /</span>数码</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div data-v-4eceb4d8="" data-v-1994baad="" class="classificationItem"><img data-v-4eceb4d8="" src="../img/8.png" alt="icon">
+                                        <p data-v-4eceb4d8="">
+                                            内衣袜子</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div data-v-4eceb4d8="" data-v-1994baad="" class="classificationItem"><img data-v-4eceb4d8="" src="../img/9.png" alt="icon">
+                                        <p data-v-4eceb4d8="">
+                                            文娱</p>
+                                        <p data-v-4eceb4d8=""><span data-v-4eceb4d8=""> /</span>家居</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="banner-container">
+                        <div class="banner-container-top clear_fix">
+                            <div class="slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../img/banner.jpeg" alt=""></div>
+                                        <div class="swiper-slide"><img src="../img/banner2.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="../img/banner3.png" alt=""></div>
+                                    </div>-->
+            <!-- 如果需要分页器 -->
+            <!-- <div class="swiper-pagination "></div> -->
+
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev" id="swiper-button-left"></div>
+            <div class="swiper-button-next" id="swiper-button-right"></div> -->
+
+        </div>
+        <!-- </div> -->
+        <!-- 轮播图右边 -->
+        <!-- <div class="banner-container-top-right ">
+        <h3>9块9包邮</h3>
+        <div class="prompt ">保你不吃亏</div> <img src="http://img1.lukou.com/static/coupon/p/image_link/HNXymT0c8PiY7luPgoymC2TwT2p1NulN.gif " alt="专题图 "></div>
+    </div> -->
+        <!-- 轮播图底面 -->
+        <!-- <div class="banner-container-bottom ">
+        <div class="banner-container-bottom-special ">
+            <h3>冬季女装上新</h3>
+            <p>速来抢购~</p>
+            <span class="btn ">Go</span>
+            <img src="http://img1.lukou.com/static/coupon/p/image_link/uNu7gRJopziCmxhDUhz68rGfNOudDUc6.png " alt="专题图 ">
+        </div>
+        <div class="banner-container-bottom-special ">
+            <h3>超值大额券</h3>
+            <p>优惠直击底价</p>
+            <span class="btn ">Go</span>
+            <img src="http://img1.lukou.com/static/p/commodity/img/20181212-235507.png " alt="专题图 ">
+        </div>
+        <a href="#/downLoad " target="_blank " class="banner-container-bottom-QRCode ">
+            <p>扫码下载APP</p>
+            <p>发现更多惊喜</p>
+            <img src="../img/二维码.png " alt="下载码 ">
+        </a>
+    </div>
+    </section>
+    </div>
+    <div class="title-bar ">
+        <h3>小编精选</h3>
+        <p class="title-bar-prompt ">
+            每天更新
+        </p>
+    </div> -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="..." alt="...">
+                        </a>
+                    </div> -->
+        <!-- </div> -->
+        <!-- <section class="choice ">
+        <ul class="base-commodity-list ">
+        </ul>
+        <div class="choice-more ">
+            <div class="choice-more-btn ">查看更多
+            </div>
+        </div>
+    </section> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- 置顶 -->
+        <div class="back-top ">
+            <img src="../img/置顶.png " class="top " style="display: block; ">
+        </div>
+        <!-- 底部 -->
+        <footer class="footer ">
+            <div class="base-footer ">
+                <div class="container ">
+                    <img src="http://img1.lukou.com/static/img/activity/icon.png " class="yx-icon ">
+                    <div class="content ">
+                        <h1 class="title ">熊猫优选</h1>
+                        <p class="slogan ">年轻人网购首选<br>购物领券更省钱</p>
+                    </div>
+                    <div class="about-us ">
+                        <p class="items "><span class="line ">|</span> <a href="#/downLoad " target="_blank " class="item ">下载APP</a></p>
+                    </div>
+                    <div class="footer "><img src="http://img1.lukou.com/static/img/activity/policeIcon.png " class="police-icon ">
+                        <p class="msg ">
+                            <span>
+                                    浙公安网备案 33010602009949号 | 增值电信业务经营许可证：浙B2-20160363 | 
+                                </span> ICP备案号:
+                            <a style="color: rgb(255, 255, 255); ">浙ICP备17012864号-1</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+    </script>
+    <script src="../js/updata.js "></script>
+    <script src="../js/indexTab.js"></script>
+
+
+</body>
+
+</html>

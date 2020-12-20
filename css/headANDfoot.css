@@ -1,0 +1,343 @@
+.footer {
+    margin: 0 auto
+}
+
+.base-footer {
+    width: 100%;
+    height: 240px;
+    background: #000;
+    opacity: .706;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    font-family: PingFang-SC-Medium;
+    /* margin-top: 81px */
+}
+
+.base-footer .container {
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto
+}
+
+.base-footer .container .yx-icon {
+    float: left;
+    width: 112px;
+    height: 112px;
+    margin: 37px 19px 0 40px;
+    margin-right: 19px
+}
+
+.base-footer .container .content {
+    display: inline-block;
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 444px
+}
+
+.base-footer .container .content .title {
+    font-size: 36px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600
+}
+
+.base-footer .container .content .slogan {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px
+}
+
+.base-footer .container .about-us {
+    margin-top: -56px
+}
+
+.base-footer .container .about-us .items {
+    font-size: 20px;
+    margin-left: 502px
+}
+
+.base-footer .container .about-us .item {
+    color: #fff;
+    text-decoration: none
+}
+
+.base-footer .container .about-us .item:hover {
+    color: #ff5556
+}
+
+.base-footer .container .about-us .line {
+    margin: 0 8px
+}
+
+.base-footer .container .footer {
+    position: relative;
+    text-align: center;
+    margin-top: 88px
+}
+
+.base-footer .container .footer .police-icon {
+    width: 22px;
+    height: 22px;
+    margin-top: 5px;
+    vertical-align: -5px
+}
+
+.base-footer .container .footer .msg {
+    display: inline-block;
+    line-height: 25px;
+    font-size: 18px
+}
+
+.simple-footer {
+    margin-top: 0;
+    height: 60px;
+    line-height: 60px
+}
+
+.simple-footer .container .footer {
+    margin-top: 0
+}
+
+
+/* 置顶 */
+
+.back-top {
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    bottom: 315px;
+    display: none;
+}
+
+.back-top .top {
+    width: 60px;
+    height: 60px
+}
+
+
+/* 导航兰 */
+
+.normal {
+    margin: 0 auto;
+    width: 100%;
+    height: 46px;
+    color: #fff;
+    background-color: #43240c
+}
+
+.normal ul {
+    margin: 0 auto;
+    width: 1200px;
+    height: 46px
+}
+
+.normal li {
+    cursor: pointer;
+    float: left;
+    width: 166px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 47px
+}
+
+.normal li.active,
+.normal li:hover {
+    color: #43240c;
+    background-color: #fee44e
+}
+
+.normal li:first-of-type {
+    width: 220px
+}
+
+#appPC {
+    overflow: hidden;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f5f5f5;
+    margin: 0 auto;
+    animation: bac 1s
+}
+
+@keyframes bac {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* 头部 */
+
+.baseHeader {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 161px;
+    font-size: 14px;
+    color: #877a73;
+    background-color: #fff
+}
+
+.baseHeader .wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%
+}
+
+.baseHeader .logo {
+    overflow: hidden;
+    float: left;
+    margin: 50px 0 0 20px;
+    height: 75px
+}
+
+.baseHeader .logo img {
+    float: left;
+    width: 75px;
+    height: 75px
+}
+
+.baseHeader .logo .right {
+    float: left;
+    margin: 8px 0 0 15px;
+    text-align: center;
+    color: #43200c
+}
+
+.baseHeader .logo .right h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px
+}
+
+.baseHeader .logo .right span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 17px;
+    transform: scale(.8)
+}
+
+.baseHeader .wrapper-search {
+    float: left;
+    margin: 50px 0 0 108px;
+    width: 532px;
+    height: 48px
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    background: url(../img/搜索.png) no-repeat center left 15px/20px 20px;
+    border-radius: 34px;
+    box-shadow: inset 0 0 0 2px #43240c
+}
+
+.search input {
+    position: absolute;
+    top: 3px;
+    left: 47px;
+    outline: 0;
+    border: 0;
+    width: calc(100% - 177px);
+    font-size: 16px;
+    line-height: 43px;
+    color: #43200c
+}
+
+.search ::-webkit-input-placeholder {
+    color: rbga(#877a73, .6)
+}
+
+.search .btn {
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    width: 124px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    /* line-height: 40px; */
+    text-align: center;
+    color: #43200c;
+    background-color: #fee44e;
+    border-radius: 34px
+}
+
+.search .hot-list {
+    position: absolute;
+    bottom: -38px;
+    left: 10px;
+    height: 20px
+}
+
+.search .hot-list ul {
+    overflow: visible
+}
+
+.search .hot-list li {
+    cursor: pointer;
+    float: left;
+    margin: 2px 0 0;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #877a73;
+    border-right: 1px solid #877a73
+}
+
+.search .hot-list li.highlight {
+    color: #ff5556
+}
+
+.search .hot-list li:first-of-type {
+    padding-left: 0
+}
+
+.search .hot-list li:last-of-type {
+    border-right: none
+}
+
+.baseHeader .advantage {
+    float: right;
+    margin: 43px 86px 0 0;
+    font-size: 10px
+}
+
+.baseHeader .advantage ul {
+    overflow: visible
+}
+
+.baseHeader .advantage li {
+    float: left;
+    position: relative;
+    margin-right: 25px;
+    width: 44px;
+    height: 60px;
+    text-align: center
+}
+
+.baseHeader .advantage li img {
+    display: inline-block;
+    width: 40px
+}
+
+.baseHeader .advantage li span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 12px;
+    white-space: nowrap;
+    transform: translateX(-50%)
+}
+
+.baseHeader .advantage li:last-of-type {
+    margin-right: 0
+}
